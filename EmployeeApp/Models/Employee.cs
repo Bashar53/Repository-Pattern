@@ -2,10 +2,9 @@
 {
     public partial class Employee
     {
-        public int EmployeeID { get; set; }
-        public string Name { get; set; }
-        public string Gender { get; set; }
-        public Nullable<int> Salary { get; set; }
-        public string Dept { get; set; }
+        public int EmployeeId { get; set; }
+        public string Name { get; set; } = string.Empty;
+        public string Department { get; set; } = string.Empty;
+        public decimal Salary { get; set; }
     }
 }
