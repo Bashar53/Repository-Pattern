@@ -1,5 +1,4 @@
-using Microsoft.EntityFrameworkCore;
-using static EmployeeApp.DbConnection.EmployeeDBContext;
+using EmployeeApp.DbConnection;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<ApplicationDbContext>(options =>

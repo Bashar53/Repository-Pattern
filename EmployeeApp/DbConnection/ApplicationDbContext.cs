@@ -5,7 +5,7 @@ namespace EmployeeApp.DbConnection
 {
         public class ApplicationDbContext : DbContext
         {
-            public ApplicationDbContext(Microsoft.EntityFrameworkCore.DbContextOptions<ApplicationDbContext> options)
+            public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
                 : base(options)
             {
 
