@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EmployeeApp.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250810091044_Add Employee table ")]
-    partial class AddEmployeetable
+    [Migration("20250810134206_Employee Table added")]
+    partial class EmployeeTableadded
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -45,7 +45,7 @@ namespace EmployeeApp.Migrations
 
                     b.HasKey("EmployeeId");
 
-                    b.ToTable("AppResources");
+                    b.ToTable("Employee");
                 });
 #pragma warning restore 612, 618
         }

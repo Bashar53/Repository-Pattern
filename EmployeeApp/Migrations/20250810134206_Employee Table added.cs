@@ -5,13 +5,13 @@
 namespace EmployeeApp.Migrations
 {
     /// <inheritdoc />
-    public partial class AddEmployeetable : Migration
+    public partial class EmployeeTableadded : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "AppResources",
+                name: "Employee",
                 columns: table => new
                 {
                     EmployeeId = table.Column<int>(type: "int", nullable: false)
@@ -22,7 +22,7 @@ namespace EmployeeApp.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_AppResources", x => x.EmployeeId);
+                    table.PrimaryKey("PK_Employee", x => x.EmployeeId);
                 });
         }
 
@@ -30,7 +30,7 @@ namespace EmployeeApp.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "AppResources");
+                name: "Employee");
         }
     }
 }

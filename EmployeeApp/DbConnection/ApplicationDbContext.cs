@@ -10,7 +10,7 @@ namespace EmployeeApp.DbConnection
             {
 
             }
-            public DbSet<Employee> AppResources { get; set; }
-           
+            public DbSet<Employee> Employee { get; set; }
+            
         }
     }

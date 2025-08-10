@@ -42,7 +42,7 @@ namespace EmployeeApp.Migrations
 
                     b.HasKey("EmployeeId");
 
-                    b.ToTable("AppResources");
+                    b.ToTable("Employee");
                 });
 #pragma warning restore 612, 618
         }
