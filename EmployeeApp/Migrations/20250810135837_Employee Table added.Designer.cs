@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EmployeeApp.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250810134206_Employee Table added")]
+    [Migration("20250810135837_Employee Table added")]
     partial class EmployeeTableadded
     {
         /// <inheritdoc />
