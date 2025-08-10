@@ -3,8 +3,6 @@ using Microsoft.EntityFrameworkCore;
 
 namespace EmployeeApp.DbConnection
 {
-    public partial class EmployeeDBContext : DbContext
-    {
         public class ApplicationDbContext : DbContext
         {
             public ApplicationDbContext(Microsoft.EntityFrameworkCore.DbContextOptions<ApplicationDbContext> options)
@@ -16,4 +14,3 @@ namespace EmployeeApp.DbConnection
            
         }
     }
-}
