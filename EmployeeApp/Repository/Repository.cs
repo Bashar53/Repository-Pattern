@@ -1,5 +1,5 @@
 ﻿using EmployeeApp.DbConnection;
-using EmployeeApp.Repository;
+using EmployeeApp.Repository.IRepository;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
