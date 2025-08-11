@@ -2,7 +2,7 @@
 {
     public interface IUnitOfWork
     {
-        IEmployeeRepository employee { get; }   
+        IEmployeeRepository employee { get; }
         Task SaveAsync();
     }
 }
