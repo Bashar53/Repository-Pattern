@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using EFCore.BulkExtensions;
 using EmployeeApp.DbConnection;
 using EmployeeApp.Models;
 using EmployeeApp.Models.DTO;
@@ -94,6 +95,21 @@ namespace EmployeeApp.Controllers
             _response.StatusCode = System.Net.HttpStatusCode.Created;
 
             return CreatedAtAction(nameof(GetEmployeeById), new { id = model.EmployeeId }, _response);
+        }
+        [Route("/AddEmployeeBySP")]
+        [HttpPost]
+        public IActionResult AddEmployee([FromBody] Employee emp)
+        {
+            _dbContext.addEmployee(emp);
+            return Ok("Employee Added Successfully!");
+        }
+        [HttpPost]
+        [Route("/EmployeeBulkInset")]
+        public IActionResult BulkInsertEmployees([FromBody] List<Employee> employees)
+        {
+            _dbContext.BulkInsert(employees);
+            return Ok("Employee Added Successfully!");
+
         }
 
     }
